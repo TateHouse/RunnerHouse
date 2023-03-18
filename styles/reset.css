@@ -1,0 +1,16 @@
+* {
+	border-radius: 0;
+	font-family: "noto-sans", sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-rendering: optimizeSpeed;
+}
+
+ol, ul {
+	list-style: none;
+}
