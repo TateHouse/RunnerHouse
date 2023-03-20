@@ -82,6 +82,18 @@ main section table tr {
 	color: #486B8A;
 }
 
+main section table tr a {
+	display: block;
+}
+
+main section table tr a:visited {
+	color: #486B8A;
+}
+
+main section table tr a:hover, main section table tr a:focus {
+	color: #C1B3A3;
+}
+
 main section table thead tr th {
 	font-weight: bold;
 	padding-bottom: 1.5%;
