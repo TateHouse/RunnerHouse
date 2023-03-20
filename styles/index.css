@@ -116,10 +116,6 @@ main section:nth-of-type(2) a {
 	padding-top: 1%;
 }
 
-main section:nth-of-type(2) a:hover, main section:nth-of-type(2) a:focus {
-	color: #C1B3A3;
-}
-
 footer {
 	background-color: #486B8A;
 	bottom: 0;

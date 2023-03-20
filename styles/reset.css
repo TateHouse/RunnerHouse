@@ -14,3 +14,7 @@
 ol, ul {
 	list-style: none;
 }
+
+nav ul li a:hover, nav ul li a:focus {
+	color: #C1B3A3;
+}
