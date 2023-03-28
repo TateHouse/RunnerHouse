@@ -1,0 +1,72 @@
+main {
+	display: grid;
+	grid-template: repeat(2, auto) / repeat(3, 1fr);
+	grid-template-areas:
+		"head head head"
+		"shoes socks shorts";
+}
+
+main header {
+	color: #486B8A;
+	grid-area: head;
+	margin-top: 10%;
+	text-align: center;
+}
+
+main header h1 {
+	font-size: 5em;
+}
+
+main header p {
+	font-size: 1.25em;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+}
+
+main section {
+	background-color: #486B8A;
+	color: #DCDCDC;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 15.5%;
+	padding-top: 5%;
+	text-align: center;
+}
+
+main section a {
+	display: block;
+}
+
+main section h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+	margin-top: 5%;
+}
+
+main section p {
+	font-size: 0.75em;
+	margin-bottom: 4%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+main section:nth-of-type(1) {
+	grid-area: shoes;
+}
+
+main section:nth-of-type(2) {
+	grid-area: socks;
+}
+
+main section:nth-of-type(3) {
+	grid-area: shorts;
+}
+
+main section:nth-of-type(1) a img, main section:nth-of-type(2) a img, main section:nth-of-type(3) a img {
+	display: block;
+	margin: 0 auto;
+	max-width: 256px;
+	width: 100%;
+}
