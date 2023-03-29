@@ -14,7 +14,7 @@ function selectShortsImage() {
                              "A pair of 1 inch shorts from BOA with a USA flag design"];
 
     function getImageElement() {
-        return document.getElementById("shorts-img");
+        return document.querySelector("#shorts-img");
     }
 
     function generateRandomIndex() {
@@ -47,7 +47,7 @@ function selectShortsURL(index) {
                   "https://www.boausa.com/collections/1-elite-shorts/products/1000swp-sab"];
 
     function getLinkElement() {
-        return document.getElementById("shorts-link");
+        return document.querySelector("#shorts-link");
     }
 
     function setURL(linkElement, index) {
