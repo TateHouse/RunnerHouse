@@ -84,13 +84,15 @@ main section form section input[type="submit"], main section form section input[
 	background-color: #486B8A;
 	color: #DCDCDC;
 	display: block;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	margin: 0 auto;
 	margin-bottom: 2%;
+	max-width: 25%;
 	padding-bottom: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
 	padding-top: 2%;
+	width: 100%;
 }
 
 main section form section input[type="submit"]:hover,
