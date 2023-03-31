@@ -4,5 +4,7 @@
     <inspection_tool class="ClangTidy" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="clangTidyChecks" value="-*,boost-*,bugprone-*,concurrency-*,cppcoreguidelines-*,misc-*,mpi-*,openmp-*,performance-*,google-default-arguments,google-runtime-int,google-runtime-operator,google-explicit-constructor,google-build-using-namespace,hicpp-multiway-paths-covered,hicpp-exception-baseclass,modernize-*,-modernize-use-trailing-return-type,portability-*,-portability-restrict-system-includes,readability-*,-readability-identifier-length,-readability-uppercase-literal-suffix,-readability-identifier-naming" />
     </inspection_tool>
+    <inspection_tool class="HtmlRequiredSummaryAttribute" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="HtmlRequiredTitleAttribute" enabled="true" level="INFORMATION" enabled_by_default="true" />
   </profile>
 </component>
