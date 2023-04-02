@@ -33,28 +33,49 @@ main section form section h2 {
 }
 
 main section form section label {
-	display: block;
-	text-align: center;
+	display: none;
 }
 
-main section form section label input[type="number"]::-webkit-inner-spin-button {
+main section form section label input {
+	display: block;
+}
+
+main section form section div:nth-of-type(1) {
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+main section form section div:nth-of-type(2) {
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#input-distance-length {
+	margin-right: 2%;
+}
+
+main section form section input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-main section form section label input[type="number"] {
+main section form section div input[type="number"] {
 	background-color: #DCDCDC;
 	max-width: 150px;
 	width: 100%;
 }
 
-main section form section label input[type="number"]::placeholder {
+main section form section div input[type="number"]::placeholder {
 	color: #486B8A;
 	font-size: 1.2em;
 	text-align: center;
 }
 
-main section form section label select {
+main section form section div select {
 	background-color: #DCDCDC;
 	color: #486B8A;
 }
