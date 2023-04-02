@@ -47,7 +47,7 @@ nav ul li a {
 	font-weight: bold;
 }
 
-nav ul li a:hover, nav ul li a:focus {
+a:hover, a:focus {
 	color: #C1B3A3;
 }
 
