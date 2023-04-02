@@ -1,0 +1,55 @@
+main header h1 {
+	color: #486B8A;
+	font-size: 5em;
+	margin-bottom: 16%;
+	margin-top: 12%;
+	text-align: center;
+}
+
+main section {
+	background-color: #486B8A;
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+}
+
+main section p {
+	color: #DCDCDC;
+	font-size: 1.5em;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+main section form label {
+	display: none;
+}
+
+main section form input {
+	background-color: #DCDCDC;
+	border: none;
+	color: #486B8A;
+	display: block;
+}
+
+main section form input[type="email"] {
+	font-size: 1.5em;
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+}
+
+main section form input[type="email"]::placeholder {
+	color: #486B8A;
+	text-align: center;
+}
+
+main section form input[type="submit"] {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 0 auto;
+	max-width: 125px;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	width: 100%;
+}
