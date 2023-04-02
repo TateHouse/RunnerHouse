@@ -1,0 +1,41 @@
+main header {
+	margin-bottom: 15%;
+	margin-top: 13%;
+}
+
+main header h1 {
+	color: #486B8A;
+	font-size: 4em;
+	text-align: center;
+}
+
+main section {
+	background-color: #486B8A;
+	color: #DCDCDC;
+	padding-bottom: 3%;
+	padding-top: 2%;
+	text-align: center;
+}
+
+main section p:nth-of-type(1) {
+	font-size: 2em;
+}
+
+main section p:nth-of-type(2) {
+	font-size: 1.25em;
+	line-height: 1.2em;
+	margin-bottom: 4%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+}
+
+main section a {
+	background-color: #DCDCDC;
+	color: #486B8A;
+	font-size: 1.2em;
+	padding-bottom: 0.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0.5%;
+}
