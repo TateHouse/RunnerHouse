@@ -1,124 +1,222 @@
+.current {
+	color: #929292;
+}
+
+html {
+	background-color: #929292;
+	height: 100%;
+}
+
+body {
+	background-color: #DCDCDC;
+	background-image: repeating-linear-gradient(
+			20deg,
+			#C1B3A3 0%,
+			#C1B3A3 15%,
+			transparent 15%,
+			transparent 43%
+	);
+	display: grid;
+	grid-template-areas:
+		"nav"
+		"main"
+		"footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 5% 90% 5%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 50%;
+}
+
+nav {
+	background-color: #486B8A;
+	grid-area: nav;
+}
+
+nav ul {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	justify-content: space-evenly;
+}
+
+nav ul li a {
+	color: #DCDCDC;
+	display: block;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+a:hover, a:focus {
+	color: #C1B3A3;
+}
+
+main {
+	align-items: start;
+	display: grid;
+	grid-template-areas:
+		"header"
+		"section";
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.4fr 1fr;
+	overflow-y: auto;
+}
+
 main header {
+	align-items: center;
 	color: #486B8A;
+	display: flex;
+	flex-direction: column;
+	grid-area: header;
+	height: 100%;
+	justify-content: center;
 	text-align: center;
 }
 
 main header h1 {
 	font-size: 5em;
-	margin-top: 10%;
+
 }
 
-main section {
-	margin-bottom: 5%;
-	margin-left: 12%;
-	margin-right: 12%;
-	margin-top: 3%;
-	padding-bottom: 2%;
-	padding-top: 2%;
+main > section {
+	grid-area: section;
+	height: 100%;
 }
 
-main section form section:nth-of-type(1), main section form section:nth-of-type(2) {
-	background-color: #486B8A;
+main > section form {
+	display: grid;
+	grid-template-areas:
+		"form-input"
+		"form-output"
+		"form-controls";
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.4fr 0.5fr 0.3fr;
 }
 
-main section form section input {
-	border: none;
+main > section > form > section:nth-of-type(1) {
+	grid-area: form-input;
 }
 
-main section form section h2 {
-	color: #DCDCDC;
-	font-size: 2.5em;
-	margin-bottom: 2.5%;
+main > section > form > section:nth-of-type(1) > div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 75%;
+}
+
+main > section > form > section:nth-of-type(2) {
+	grid-area: form-output;
 	text-align: center;
 }
 
-main section form section label {
+main > section > form > section:nth-of-type(1), main > section > form > section:nth-of-type(2) {
+	background-color: #486B8A;
+	color: #DCDCDC;
+	margin: 0 auto;
+	width: 50%;
+}
+
+main > section > form > section > h2 {
+	font-size: 2.5em;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	text-align: center;
+}
+
+main > section > form > section > div > label {
 	display: none;
 }
 
-main section form section label input {
-	display: block;
+main > section > form > section > div > input {
+	border: none;
 }
 
-main section form section div:nth-of-type(1) {
-	display: flex;
-	flex-basis: auto;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-main section form section div:nth-of-type(2) {
-	display: flex;
-	flex-basis: auto;
-	flex-direction: row;
-	justify-content: center;
-}
-
-#input-distance-length {
-	margin-right: 2%;
-}
-
-main section form section input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-main section form section div input[type="number"] {
+main > section > form > section > div > input[type="number"] {
 	background-color: #DCDCDC;
-	max-width: 150px;
+	max-width: 200px;
+	text-align: center;
 	width: 100%;
 }
 
-main section form section div input[type="number"]::placeholder {
+main > section > form > section > div > input[type="number"]::placeholder {
 	color: #486B8A;
 	font-size: 1.2em;
 	text-align: center;
 }
 
+main > section > form > section > div > input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+main > section > form > section > div:nth-of-type(1) > input[type="number"]:nth-of-type(2) {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+main > section > form > section > div:nth-of-type(2) > input[type="number"]:nth-of-type(1) {
+	margin-bottom: 2%;
+}
+
 main section form section div select {
 	background-color: #DCDCDC;
 	color: #486B8A;
-}
-
-main section form section:nth-of-type(2) div {
-	display: flex;
-	flex-basis: auto;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin: 0 auto;
-}
-
-main section form section h3 {
-	color: #DCDCDC;
-	font-size: 1.25em;
-	margin-bottom: 5%;
 	text-align: center;
 }
 
-main section form section div p {
-	color: #DCDCDC;
-	font-size: 1.5em;
-	margin-bottom: 2%;
+main > section > form > section:nth-of-type(2) div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 
-main section form section input[type="submit"], main section form section input[type="reset"] {
-	background-color: #486B8A;
-	color: #DCDCDC;
-	display: block;
-	font-size: 1.6em;
+main > section > form > section:nth-of-type(2) p {
+	font-size: 1.25em;
+	margin-bottom: 5%;
+}
+
+main > section > form > section:nth-of-type(3) {
+	grid-area: form-controls;
 	margin: 0 auto;
-	margin-bottom: 2%;
-	max-width: 25%;
+	margin-top: 2%;
+	width: 50%;
+}
+
+main > section > form > section:nth-of-type(3) input[type="submit"],
+main > section > form > section:nth-of-type(3) input[type="reset"] {
+	background-color: #486B8A;
+	border: none;
+	color: #DCDCDC;
+	font-size: 1.6em;
 	padding-bottom: 2%;
 	padding-left: 2%;
 	padding-right: 2%;
 	padding-top: 2%;
-	width: 100%;
+	width: 45%;
 }
 
-main section form section input[type="submit"]:hover,
-main section form section input[type="submit"]:focus,
-main section form section input[type="reset"]:hover,
-main section form section input[type="reset"]:focus {
+main > section > form > section:nth-of-type(3) input:hover, main > section > form > section:nth-of-type(3):focus {
 	color: #C1B3A3;
+}
+
+main > section > form > section:nth-of-type(3) input[type="reset"] {
+	float: right;
+}
+
+footer {
+	background-color: #486B8A;
+	grid-area: footer;
+}
+
+footer p {
+	align-items: center;
+	color: #DCDCDC;
+	display: flex;
+	font-weight: bold;
+	height: 100%;
+	justify-content: center;
 }
