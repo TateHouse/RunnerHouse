@@ -132,6 +132,10 @@ main section form input[type="submit"] {
 	width: 100%;
 }
 
+main section form input[type="submit"]:hover, main section form input[type="submit"]:focus {
+	background-color: #C1B3A3;
+}
+
 footer {
 	background-color: #486B8A;
 	grid-area: footer;
