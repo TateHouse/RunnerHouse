@@ -149,3 +149,68 @@ footer p {
 	height: 100%;
 	justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+	main header h1 {
+		font-size: 3.5em;
+	}
+
+	main section p {
+		font-size: 1.1em;
+	}
+
+	main section form input[type="email"] {
+		font-size: 1.2em;
+	}
+
+	main section form input[type="submit"] {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		grid-template-rows: 20% 75% 5%;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li a {
+		font-size: 1.2em;
+	}
+
+	main section form input[type="email"] {
+		margin-bottom: 2%;
+		margin-top: 2%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	main header h1 {
+		font-size: 2.5em;
+	}
+
+	main section p {
+		font-size: 0.8em;
+	}
+
+	main section form input[type="email"] {
+		font-size: 0.8em;
+	}
+
+	main section form input[type="submit"] {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main header h1 {
+		font-size: 2em;
+	}
+
+	main section p {
+		font-size: 0.7em;
+	}
+}
