@@ -172,3 +172,102 @@ footer p {
 	height: 100%;
 	justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+	main header h1 {
+		font-size: 3.5em;
+	}
+
+	main header p {
+		font-size: 1.25em;
+	}
+
+	main section:nth-of-type(1) h2 {
+		font-size: 1.5em;
+	}
+
+	main section:nth-of-type(1) p {
+		font-size: 1em;
+		margin-bottom: 2%;
+		margin-top: 2%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		grid-template-rows: 20% 75% 5%;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li a {
+		font-size: 1.2em;
+	}
+
+	main header h1 {
+		font-size: 2.5em;
+	}
+
+	main header p {
+		font-size: 1em;
+	}
+
+	main section:nth-of-type(1) {
+		height: 100%;
+	}
+
+	main section:nth-of-type(1) p {
+		font-size: 1em;
+	}
+
+	main section:nth-of-type(2) p, main section:nth-of-type(2) a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	main header h1 {
+		font-size: 1.75em;
+	}
+
+	main header p {
+		font-size: 1em;
+		margin-top: 5%;
+	}
+
+	main section:nth-of-type(1) h2 {
+		font-size: 1.1em;
+	}
+
+	main section:nth-of-type(1) p {
+		font-size: 0.8em;
+	}
+
+	main section:nth-of-type(2) p, main section:nth-of-type(2) a {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main header h1 {
+		font-size: 1.5em;
+	}
+
+	main header p {
+		font-size: 0.9em;
+	}
+
+	main section:nth-of-type(1) h2 {
+		font-size: 1em;
+	}
+
+	main section:nth-of-type(1) p {
+		font-size: 0.7em;
+	}
+
+	main section:nth-of-type(2) p, main section:nth-of-type(2) a {
+		font-size: 0.8em;
+	}
+}
