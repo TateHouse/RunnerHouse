@@ -57,6 +57,7 @@ a:hover, a:focus {
 main {
 	align-items: start;
 	display: grid;
+	grid-area: main;
 	grid-template-areas:
 		"header"
 		"section1"
