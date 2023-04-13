@@ -161,7 +161,10 @@ main section:nth-of-type(2) a, main section:nth-of-type(2) button {
 	width: 100%;
 }
 
-main section:nth-of-type(2) a:hover, main section:nth-of-type(2) a:focus {
+main section:nth-of-type(2) a:hover,
+main section:nth-of-type(2) a:focus,
+main section:nth-of-type(2) button:hover,
+main section:nth-of-type(2) button:focus {
 	color: #C1B3A3;
 }
 
