@@ -54,17 +54,30 @@ function validateInputAndCalculatePace(event) {
         return formatMinutesPerMile(formattedMinutes, formattedSeconds);
     }
 
+    function isDistanceZero(distanceInput) {
+        return distanceInput === 0;
+    }
+
+    function distanceIsZeroErrorMessage() {
+        return "Distance cannot be zero.";
+    }
+
+
     event.preventDefault();
 
+    const milePaceDisplayElement = getMilePaceDisplayElement();
     const inputHours = getTimeInput("input-hours");
     const inputMinutes = getTimeInput("input-minutes");
     const inputSeconds = getTimeInput("input-seconds");
     const inputDistanceLength = getTimeInput("input-distance-length");
+    if (isDistanceZero(inputDistanceLength)) {
+        milePaceDisplayElement.textContent = distanceIsZeroErrorMessage();
+        return;
+    }
+
     const totalSeconds = calculateTotalSeconds(inputHours, inputMinutes, inputSeconds);
     const pace = calculatePace(totalSeconds, inputDistanceLength);
-    const milePaceOutput = convertPaceToMinutesAndSeconds(pace);
-    const milePaceDisplayElement = getMilePaceDisplayElement();
-    milePaceDisplayElement.textContent = milePaceOutput;
+    milePaceDisplayElement.textContent = convertPaceToMinutesAndSeconds(pace);
 }
 
 function resetMilePaceOutput() {
