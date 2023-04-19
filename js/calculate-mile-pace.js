@@ -2,6 +2,10 @@ function getFormElement() {
     return document.querySelector('form');
 }
 
+function getMilePaceDisplayElement() {
+    return document.querySelector("#mile-pace-display");
+}
+
 function validateInputAndCalculatePace(event) {
     function getTimeInput(elementId) {
         let inputValue = form.elements.namedItem(elementId).value;
@@ -50,10 +54,6 @@ function validateInputAndCalculatePace(event) {
         return formatMinutesPerMile(formattedMinutes, formattedSeconds);
     }
 
-    function getMilePaceDisplayElement() {
-        return document.querySelector("#mile-pace-display");
-    }
-
     event.preventDefault();
 
     const inputHours = getTimeInput("input-hours");
@@ -67,5 +67,15 @@ function validateInputAndCalculatePace(event) {
     milePaceDisplayElement.textContent = milePaceOutput;
 }
 
+function resetMilePaceOutput() {
+    function clearMilePaceOutputElement(element) {
+        element.textContent = "";
+    }
+
+    const milePaceDisplayElement = getMilePaceDisplayElement();
+    clearMilePaceOutputElement(milePaceDisplayElement);
+}
+
 const form = getFormElement();
 form.addEventListener("submit", validateInputAndCalculatePace);
+form.addEventListener("reset", resetMilePaceOutput);
