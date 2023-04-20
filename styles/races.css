@@ -107,10 +107,11 @@ main section table tr {
 }
 
 main section table tbody tr a {
+	color: #486B8A;
 	display: block;
 }
 
-main section table tbody tr a:visited {
+main section table tbody tr td a:visited {
 	color: #486B8A;
 }
 
