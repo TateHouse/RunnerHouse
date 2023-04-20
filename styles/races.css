@@ -106,7 +106,7 @@ main section table tr {
 	color: #486B8A;
 }
 
-main section table tbody tr a {
+main section table tbody tr td a {
 	color: #486B8A;
 	display: block;
 }
@@ -115,7 +115,7 @@ main section table tbody tr td a:visited {
 	color: #486B8A;
 }
 
-main section table tbody tr a:hover, main section table tbody tr a:focus {
+main section table tbody tr td a:hover, main section table tbody tr td a:focus {
 	color: #C1B3A3;
 }
 
