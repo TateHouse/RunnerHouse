@@ -1,4 +1,4 @@
-main > section {
+main > div {
 	align-items: start;
 	display: grid;
 	grid-template-areas:
@@ -8,19 +8,19 @@ main > section {
 	text-align: center;
 }
 
-main > section > section:nth-of-type(1) {
+main > div > section:nth-of-type(1) {
 	grid-area: shoes;
 }
 
-main > section > section:nth-of-type(2) {
+main > div > section:nth-of-type(2) {
 	grid-area: socks;
 }
 
-main > section > section:nth-of-type(3) {
+main > div > section:nth-of-type(3) {
 	grid-area: shorts;
 }
 
-main > section > section {
+main > div > section {
 	align-items: center;
 	background-color: #486B8A;
 	color: #DCDCDC;
@@ -32,13 +32,13 @@ main > section > section {
 	width: 90%;
 }
 
-main > section > section h2 {
+main > div > section h2 {
 	font-size: 1.25em;
 	font-weight: bold;
 	margin-top: 2%;
 }
 
-main > section > section p {
+main > div > section p {
 	font-size: 0.75em;
 	margin-bottom: 4%;
 	margin-left: 2%;
@@ -46,11 +46,11 @@ main > section > section p {
 	margin-top: 2%;
 }
 
-main > section > section > a {
+main > div > section > a {
 	display: block;
 }
 
-main > section section a img {
+main > div section a img {
 	display: block;
 	margin-top: 5%;
 	max-width: 256px;
@@ -66,11 +66,11 @@ main > section section a img {
 		font-size: 1em;
 	}
 
-	main section section h2 {
+	main div section h2 {
 		font-size: 1em;
 	}
 
-	main section section p {
+	main div section p {
 		font-size: 0.6em;
 	}
 }
@@ -88,7 +88,7 @@ main > section section a img {
 		font-size: 1.2em;
 	}
 
-	main section section h2 {
+	main div section h2 {
 		font-size: 0.8em;
 	}
 }
@@ -105,7 +105,7 @@ main > section section a img {
 		margin-top: 5%;
 	}
 
-	main > section {
+	main > div {
 		display: grid;
 		grid-template-areas:
 			"shoes"
@@ -118,11 +118,11 @@ main > section section a img {
 		row-gap: 2%;
 	}
 
-	main section section {
+	main div section {
 		padding: 0;
 	}
 
-	main > section > section:nth-of-type(3) {
+	main > div > section:nth-of-type(3) {
 		margin-bottom: 5%;
 	}
 }
@@ -132,7 +132,7 @@ main > section section a img {
 		font-size: 0.7em;
 	}
 
-	main > section > section:nth-of-type(3) {
+	main > div > section:nth-of-type(3) {
 		margin-bottom: 10%;
 	}
 }
