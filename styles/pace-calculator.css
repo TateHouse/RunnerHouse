@@ -6,12 +6,12 @@ main {
 	grid-template-rows: 0.6fr 1fr;
 }
 
-main > section {
+main > div {
 	grid-area: section;
 	height: 100%;
 }
 
-main > section form {
+main > div > form {
 	display: grid;
 	grid-template-areas:
 		"form-input"
@@ -21,11 +21,11 @@ main > section form {
 	grid-template-rows: 0.4fr 0.5fr 0.3fr;
 }
 
-main > section > form > section:nth-of-type(1) {
+main > div > form > section:nth-of-type(1) {
 	grid-area: form-input;
 }
 
-main > section > form > section:nth-of-type(1) > div {
+main > div > form > section:nth-of-type(1) > div {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -34,86 +34,80 @@ main > section > form > section:nth-of-type(1) > div {
 	width: 75%;
 }
 
-main > section > form > section:nth-of-type(2) {
+main > div > form > section:nth-of-type(2) {
 	grid-area: form-output;
 	text-align: center;
 }
 
-main > section > form > section:nth-of-type(1), main > section > form > section:nth-of-type(2) {
+main > div > form > section:nth-of-type(1), main > div > form > section:nth-of-type(2) {
 	background-color: #486B8A;
 	color: #DCDCDC;
 	margin: 0 auto;
 	width: 50%;
 }
 
-main > section > form > section > h2 {
+main > div > form > section > h2 {
 	font-size: 2.5em;
 	margin-bottom: 2%;
 	margin-top: 2%;
 	text-align: center;
 }
 
-main > section > form > section > div > label {
+main > div > form > section > div > label {
 	display: none;
 }
 
-main > section > form > section > div > input {
+main > div > form > section > div > input {
 	border: none;
 }
 
-main > section > form > section > div > input[type="number"] {
+main > div > form > section > div > input[type="number"] {
 	background-color: #DCDCDC;
 	max-width: 200px;
 	text-align: center;
 	width: 100%;
 }
 
-main > section > form > section > div > input[type="number"]::placeholder {
+main > div > form > section > div > input[type="number"]::placeholder {
 	color: #486B8A;
 	font-size: 1.2em;
 	text-align: center;
 }
 
-main > section > form > section > div > input[type="number"]::-webkit-inner-spin-button {
+main > div > form > section > div > input[type="number"]::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-main > section > form > section > div:nth-of-type(1) > input[type="number"]:nth-of-type(2) {
+main > div > form > section > div:nth-of-type(1) > input[type="number"]:nth-of-type(2) {
 	margin-bottom: 2%;
 	margin-top: 2%;
 }
 
-main > section > form > section > div:nth-of-type(2) > input[type="number"]:nth-of-type(1) {
+main > div > form > section > div:nth-of-type(2) > input[type="number"]:nth-of-type(1) {
 	margin-bottom: 2%;
 }
 
-main section form section div select {
-	background-color: #DCDCDC;
-	color: #486B8A;
-	text-align: center;
-}
-
-main > section > form > section:nth-of-type(2) div {
+main > div > form > section:nth-of-type(2) div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 }
 
-main > section > form > section:nth-of-type(2) p {
+main > div > form > section:nth-of-type(2) p {
 	font-size: 1.25em;
 	margin-bottom: 5%;
 }
 
-main > section > form > section:nth-of-type(3) {
+main > div > form > div {
 	grid-area: form-controls;
 	margin: 0 auto;
 	margin-top: 2%;
 	width: 50%;
 }
 
-main > section > form > section:nth-of-type(3) input[type="submit"],
-main > section > form > section:nth-of-type(3) input[type="reset"] {
+main > div > form > div input[type="submit"],
+main > div > form > div input[type="reset"] {
 	background-color: #486B8A;
 	border: none;
 	color: #DCDCDC;
@@ -125,11 +119,11 @@ main > section > form > section:nth-of-type(3) input[type="reset"] {
 	width: 45%;
 }
 
-main > section > form > section:nth-of-type(3) input:hover, main > section > form > section:nth-of-type(3):focus {
+main > div > form > div input:hover, main > section > form > div input:focus {
 	color: #C1B3A3;
 }
 
-main > section > form > section:nth-of-type(3) input[type="reset"] {
+main > div > form > div input[type="reset"] {
 	float: right;
 }
 
@@ -138,16 +132,16 @@ main > section > form > section:nth-of-type(3) input[type="reset"] {
 		font-size: 3em;
 	}
 
-	main section form section h2 {
+	main div form section h2 {
 		font-size: 1.5em;
 	}
 
-	main section form section:nth-of-type(2) div {
+	main div form section:nth-of-type(2) div {
 		font-size: 0.8em;
 	}
 
-	main > section > form > section:nth-of-type(3) input[type="submit"],
-	main > section > form > section:nth-of-type(3) input[type="reset"] {
+	main > div > form > div input[type="submit"],
+	main > div > form > div input[type="reset"] {
 		font-size: 1.2em;
 	}
 }
@@ -165,12 +159,12 @@ main > section > form > section:nth-of-type(3) input[type="reset"] {
 		font-size: 1.2em;
 	}
 
-	main section form section:nth-of-type(2) div {
+	main div form section:nth-of-type(2) div {
 		font-size: 0.7em;
 	}
 
-	main > section > form > section:nth-of-type(3) input[type="submit"],
-	main > section > form > section:nth-of-type(3) input[type="reset"] {
+	main > div > form > div input[type="submit"],
+	main > div > form > div input[type="reset"] {
 		font-size: 0.8em;
 	}
 }
@@ -180,27 +174,27 @@ main > section > form > section:nth-of-type(3) input[type="reset"] {
 		font-size: 1.8em;
 	}
 
-	main > section > form > section:nth-of-type(1),
-	main > section > form > section:nth-of-type(2) {
+	main > div > form > section:nth-of-type(1),
+	main > div > form > section:nth-of-type(2) {
 		width: 100%;
 	}
 
-	main > section > form > section:nth-of-type(3) {
+	main > div > form > div {
 		width: 100%;
 	}
 
-	main > section > form > section:nth-of-type(3) input[type="submit"] {
+	main > div > form > div input[type="submit"] {
 		margin-top: 5%;
 	}
 
-	main > section > form > section:nth-of-type(3) input[type="reset"] {
+	main > div > form > div input[type="reset"] {
 		float: none;
 		margin-bottom: 5%;
 		margin-top: 5%;
 	}
 
-	main > section > form > section:nth-of-type(3) input[type="submit"],
-	main > section > form > section:nth-of-type(3) input[type="reset"] {
+	main > div > form > div input[type="submit"],
+	main > div > form > div input[type="reset"] {
 		font-size: 1em;
 		width: 100%;
 	}
