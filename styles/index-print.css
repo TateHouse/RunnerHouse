@@ -18,7 +18,7 @@ nav {
 	display: none;
 }
 
-main header, main section h2, main section p, main section a {
+main header, main section h2, main section h3, main section p, main section a {
 	color: black;
 }
 
