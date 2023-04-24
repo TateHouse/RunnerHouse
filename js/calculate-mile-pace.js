@@ -54,6 +54,10 @@ function validateInputAndCalculatePace(event) {
         return formatMinutesPerMile(formattedMinutes, formattedSeconds);
     }
 
+    function isTimeZero(hours, minutes, seconds) {
+        return hours === 0 && minutes === 0 && seconds === 0;
+    }
+
     function isDistanceZero(distanceInput) {
         return distanceInput === 0;
     }
@@ -69,6 +73,12 @@ function validateInputAndCalculatePace(event) {
     const inputHours = getTimeInput("input-hours");
     const inputMinutes = getTimeInput("input-minutes");
     const inputSeconds = getTimeInput("input-seconds");
+
+    if (isTimeZero(inputHours, inputMinutes, inputSeconds)) {
+        milePaceDisplayElement.textContent = "Hours, minutes, and/or seconds must be set.";
+        return;
+    }
+
     const inputDistanceLength = getTimeInput("input-distance-length");
     if (isDistanceZero(inputDistanceLength)) {
         milePaceDisplayElement.textContent = distanceIsZeroErrorMessage();
